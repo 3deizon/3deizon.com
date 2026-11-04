@@ -1,0 +1,206 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Partner pricing · 3DÉIZON</title><meta name="description" content="3DÉIZON partner rates for agencies: white-label real estate CGI."><link rel="icon" href="img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;600&display=swap"><style>
+:root{--ombre:#2E2A25;--pierre:#C8B68E;--mortier:#E8EDEC;--pombree:#7E6A55;--mtrame:#CDD4D3;--pad:clamp(18px,3vw,44px);--shd:0 0 2px rgba(20,17,14,.45),0 2px 14px rgba(20,17,14,.6),0 0 52px rgba(20,17,14,.55)}
+*{box-sizing:border-box}html,body{margin:0;background:#14110e;color:#fff;font-family:Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block}a{color:inherit;text-decoration:none}button{font:inherit}
+.it{font-family:Italiana,Georgia,serif;font-weight:400;letter-spacing:-.005em}
+.sh{text-shadow:var(--shd)}
+.logo{height:clamp(24px,2.5vw,36px);width:auto;display:block;filter:drop-shadow(0 1px 8px rgba(20,17,14,.55))}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;height:50px;padding:0 24px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid #fff;background:transparent;color:#fff;white-space:nowrap;transition:background .35s,color .35s,border-color .35s}
+.btn .ar{width:18px;height:18px;flex:none;transition:transform .35s}.btn:hover .ar{transform:translateX(4px)}
+.btn:hover{background:#fff;color:var(--ombre)}
+.btn.p{background:var(--pierre);border-color:var(--pierre);color:var(--ombre)}.btn.p:hover{background:#fff;border-color:#fff}
+/* chargement */
+#load{position:fixed;inset:0;z-index:60;background:var(--ombre);color:#fff;display:grid;place-items:center}
+#load .in{display:flex;flex-direction:column;align-items:center;gap:22px}
+#load svg.cube{width:min(34vw,180px);height:auto;overflow:visible}
+#load svg.cube path{fill:none;stroke:var(--pierre);stroke-width:1.2;stroke-linejoin:round}
+#load svg.cube path.f{fill:var(--pierre);stroke:none;opacity:0}
+#load .n{font-family:Italiana,Georgia,serif;font-size:clamp(44px,6vw,84px);line-height:1;font-variant-numeric:tabular-nums}
+#load .l{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mtrame)}
+/* nav sur l'image */
+nav{position:absolute;z-index:8;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:center;padding:calc(var(--pad)*.9) var(--pad);text-shadow:var(--shd)}
+nav ul{display:flex;gap:clamp(16px,2.6vw,40px);list-style:none;margin:0;padding:0;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;align-items:center}
+nav .lng a{display:inline-grid;place-items:center;width:38px;height:38px;border:1px solid currentColor;border-radius:999px;letter-spacing:.06em;box-shadow:0 0 18px rgba(20,17,14,.25)}
+/* hero : diaporama plein écran */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden;background:#14110e}
+.hero .sl{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
+.hero .sl.on{opacity:1}
+.hero .sl picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.12);transition:transform 7.5s cubic-bezier(.2,.6,.3,1)}
+.hero .sl.on picture img{transform:scale(1)}
+.hero .sl img.fg{display:none}
+.hero .txt{position:absolute;z-index:5;left:var(--pad);top:clamp(110px,20svh,190px);max-width:min(980px,88vw);text-shadow:var(--shd)}
+.hero h1{margin:0;font-size:min(7vw,13.5svh);line-height:.96}.hero h1 span{display:block}
+.hero .lead{margin:clamp(14px,2.4svh,26px) 0 0;max-width:460px;font-size:clamp(15px,1.2vw,19px);line-height:1.5;font-weight:600}
+.hero .tag{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;margin-bottom:10px;color:var(--pierre)}
+.hero .ctl{position:absolute;z-index:6;right:var(--pad);bottom:clamp(100px,13svh,130px);display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-shadow:var(--shd)}
+.hero .lab{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;text-align:right}.hero .lab b{display:block;font-family:Italiana,Georgia,serif;font-weight:400;font-size:clamp(22px,2vw,32px);letter-spacing:0;text-transform:none;margin-bottom:2px}
+.hero .bars{display:flex;gap:8px}.hero .bars button{width:46px;height:14px;border:0;padding:0;background:none;cursor:pointer;position:relative}
+.hero .bars button::before{content:"";position:absolute;left:0;right:0;top:6px;height:2px;background:rgba(255,255,255,.4);box-shadow:0 1px 6px rgba(20,17,14,.4)}
+.hero .bars button i{position:absolute;left:0;top:6px;height:2px;width:0;background:#fff}
+.hero .bars button.on i{animation:bar 6.5s linear forwards}@keyframes bar{to{width:100%}}
+/* projets : déroulé « mur-rideau » (lames qui s'ouvrent) */
+.pile{position:relative}
+.pan{position:relative;height:100svh;min-height:560px;overflow:hidden;background:#14110e}
+.pile.pin{height:100svh}.pile.pin .pan{position:absolute;inset:0}
+.pan>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
+.pan .t{position:absolute;z-index:2;max-width:min(860px,88vw);text-shadow:var(--shd)}
+.pan .t.tl{left:var(--pad);top:clamp(90px,14svh,140px)}
+.pan .t.ml{left:var(--pad);top:50%;transform:translateY(-50%)}
+.pan .t.bl{left:var(--pad);bottom:clamp(110px,15svh,150px)}
+.cap{font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;margin:0 0 14px;color:var(--pierre)}
+.pj .nom{margin:0;font-size:min(8vw,15svh);line-height:.94;max-width:14ch}
+.pj .meta{margin:14px 0 24px;font-size:17px;font-weight:600}
+.pj .btn{box-shadow:0 0 22px rgba(20,17,14,.3)}
+.pj .num{position:absolute;z-index:2;right:var(--pad);top:clamp(90px,14svh,140px);font-family:Italiana,Georgia,serif;font-size:clamp(60px,9vw,150px);line-height:.8;text-shadow:var(--shd)}
+.pj .num small{font-size:.32em;vertical-align:top;margin-left:6px;opacity:.8}
+/* galerie : l'image suivante attend en « fenêtre », puis s'ouvre en plein écran */
+.gal{position:relative;height:100svh;min-height:600px;overflow:hidden;background:#14110e;touch-action:pan-y}
+.gal .st{position:absolute;inset:0}
+.gal .c{position:absolute;inset:0;margin:0;clip-path:inset(0 0 0 0 round 0px);transition:clip-path 1.15s cubic-bezier(.7,0,.2,1),opacity .8s,filter 1s;cursor:pointer}
+.gal .c img{width:100%;height:100%;object-fit:cover;transform:scale(1.14);transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.gal .c.on img{transform:scale(1)}
+.gal .hd{position:absolute;z-index:9;left:var(--pad);top:clamp(80px,11svh,120px);text-shadow:var(--shd);pointer-events:none}
+.gal .hd h2{margin:0;font-size:min(4.4vw,8svh);line-height:1}
+.gal .hd p.h{margin:12px 0 0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+.gal .cpt{position:absolute;z-index:9;left:var(--pad);bottom:clamp(110px,15svh,150px);text-shadow:var(--shd);transition:opacity .5s,transform .5s}
+.gal .cpt.out{opacity:0;transform:translateY(16px)}
+.gal .cpt b{display:block;font-family:Italiana,Georgia,serif;font-weight:400;font-size:min(6vw,11svh);line-height:.95}
+.gal .cpt span{font-size:14px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.gal .nxl{position:absolute;z-index:9;left:75%;top:calc(52% - 34px);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;text-shadow:var(--shd);transition:opacity .5s}
+.gal .nxl.out{opacity:0}
+.gal .nv{position:absolute;z-index:9;right:var(--pad);top:clamp(80px,11svh,120px);display:flex;gap:10px;align-items:center;text-shadow:var(--shd)}
+.gal .nv button{width:58px;height:58px;border-radius:999px;border:1px solid #fff;background:transparent;color:#fff;display:grid;place-items:center;cursor:pointer;transition:background .3s,color .3s;box-shadow:0 0 22px rgba(20,17,14,.3)}
+.gal .nv button:hover{background:#fff;color:var(--ombre)}.gal .nv svg{width:22px;height:22px}
+.gal .nv .k{font-family:Italiana,Georgia,serif;font-size:28px;min-width:96px;text-align:center;white-space:nowrap}
+/* méthode et offre */
+.pan .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,48px);margin-top:20px;max-width:1150px}
+.step{border-top:1px solid rgba(255,255,255,.7);padding-top:16px}.step .ico{width:36px;height:36px;filter:drop-shadow(0 1px 6px rgba(20,17,14,.6))}
+.step h3{font-family:Italiana,Georgia,serif;font-weight:400;font-size:clamp(26px,2.5vw,40px);line-height:1.04;margin:12px 0 8px}.step p{margin:0;font-size:16px;line-height:1.5;font-weight:600}
+.offre .h{margin:0;font-size:min(7vw,13svh);line-height:.96}
+.offre .px{font-family:Italiana,Georgia,serif;font-size:min(8vw,14svh);color:var(--pierre);line-height:1;margin:14px 0 8px}
+.offre .pp{margin:0 0 24px;max-width:430px;font-size:17px;line-height:1.5;font-weight:600}
+.legende{position:absolute;z-index:2;right:var(--pad);bottom:clamp(100px,13svh,130px);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;text-shadow:var(--shd)}
+footer{position:relative;z-index:3;background:var(--ombre);color:var(--mtrame);padding:22px var(--pad) 110px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:12px;letter-spacing:.06em}
+footer .logo{color:#fff;height:22px;filter:none}
+/* barre d'action */
+#cta{position:fixed;z-index:40;left:50%;bottom:clamp(14px,2.4svh,26px);transform:translate(-50%,0);display:flex;gap:8px;align-items:center;padding:8px;border-radius:999px;background:rgba(46,42,37,.94);box-shadow:0 18px 40px -14px rgba(0,0,0,.7),0 0 0 1px rgba(200,182,142,.4);transition:opacity .4s,transform .4s}
+#cta.cache{opacity:0;transform:translate(-50%,30px);pointer-events:none}
+#cta .btn{height:52px;border-color:rgba(255,255,255,.5)}#cta .btn.p{padding:0 26px;font-size:13px;border-color:var(--pierre)}
+#cta .wa{width:52px;padding:0;background:transparent;border-color:rgba(200,182,142,.7);color:var(--pierre)}#cta .wa:hover{background:var(--pierre);color:var(--ombre)}#cta .wa svg{width:24px;height:24px}
+#cta .m{display:none}
+/* téléphone : images entières, l'une sous l'autre, aucun flou */
+@media (max-width:760px){
+ nav ul li.m{display:none}
+ .hero{height:100svh;min-height:0}
+ .hero .sl{display:flex;flex-direction:column;gap:5px;padding-top:66px}
+ .hero .sl picture,.hero .sl picture img,.hero .sl img.fg{position:static;display:block;width:100%;height:auto;transform:none!important;object-fit:fill}
+ .hero .txt{top:auto;bottom:146px;left:var(--pad);right:var(--pad)}.hero h1{font-size:10.6vw}.hero .lead{display:none}
+ .hero .ctl{left:var(--pad);right:auto;bottom:96px;align-items:flex-start}.hero .lab{display:none}.hero .bars button{width:34px}
+ .pile.pin{height:auto}.pile .pan,.pile.pin .pan{position:relative;inset:auto;height:auto;min-height:0;margin-bottom:5px;background:#14110e}
+ .pan>img{position:static;display:block;width:100%;height:auto}
+ .pj .t.tl,.pj .t.ml,.pj .t.bl{top:auto;bottom:14px;transform:none;left:16px;right:16px}
+ .pj .cap{display:none}.pj .nom{font-size:9vw}.pj .meta{margin:4px 0 0;font-size:13px}.pj .btn{display:none}
+ .pj .num{top:12px;right:14px;font-size:34px}.pj .num small{display:none}
+ .pj.sq .t{bottom:18px}
+ .see{display:flex;justify-content:center;padding:18px 0 26px}
+ .gal{height:auto;min-height:0;padding:96px 0 120px;touch-action:auto}
+ .gal .hd{position:static;padding:0 var(--pad) 18px}.gal .hd h2{font-size:10vw}
+ .gal .st{position:static;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--pad);scrollbar-width:none}
+ .gal .st::-webkit-scrollbar{display:none}
+ .gal .c,.gal .c.on{position:relative;inset:auto;flex:0 0 86vw;clip-path:none!important;scroll-snap-align:center;opacity:1!important;filter:none!important;align-self:flex-start}
+ .gal .c img,.gal .c.on img{height:auto;transform:none;object-fit:fill}
+ .gal .c figcaption{display:block;padding:10px 2px 0}.gal .c figcaption b{display:block;font-family:Italiana,Georgia,serif;font-weight:400;font-size:26px;line-height:1}.gal .c figcaption span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--mtrame)}
+ .gal .cpt,.gal .nxl,.gal .nv{display:none}
+ .pile .pan.mt>img{position:static}
+ .pile .pan .t.flow{position:static;padding:18px var(--pad) 26px;text-shadow:none;max-width:none;transform:none}
+ .pan .steps{grid-template-columns:1fr;gap:12px}.step p{font-size:14px}.step h3{font-size:24px;margin:8px 0 4px}.step .ico{width:28px;height:28px}
+ .offre .h{font-size:11vw}.offre .px{font-size:14vw}.legende{display:none}
+ #cta{left:10px;right:10px;transform:none;padding:6px;gap:6px}#cta.cache{transform:translateY(30px)}
+ #cta .btn{height:48px;font-size:10.5px;letter-spacing:.08em;padding:0 12px}#cta .btn.p{flex:1.4;font-size:11px;padding:0 10px}#cta .btn.g{flex:1}
+ #cta .btn .ar{display:none}#cta .wa{width:48px;flex:none}#cta .d{display:none}#cta .m{display:inline}}
+@media (min-width:761px){.gal .c figcaption,.see{display:none}}
+@media (prefers-reduced-motion:reduce){#load{display:none}.hero .sl picture img{transition:none;transform:none}}
+
+footer .fl{display:flex;gap:18px;flex-wrap:wrap}footer .fl a{color:#fff;text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:600}
+nav a[aria-current]{border-bottom:1px solid currentColor;padding-bottom:4px}
+.top{position:relative;height:100svh;min-height:560px;overflow:hidden;background:#14110e}
+.top>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.top .t{position:absolute;z-index:3;left:var(--pad);right:var(--pad);top:clamp(110px,18svh,170px);text-shadow:var(--shd)}
+.top h1{margin:0;font-size:min(8vw,15svh);line-height:.94}
+.top .lead{margin:18px 0 0;max-width:520px;font-size:clamp(16px,1.25vw,20px);line-height:1.5;font-weight:600}
+.top .legende{bottom:clamp(100px,13svh,130px)}
+.band{background:var(--ombre);padding:clamp(56px,9svh,110px) var(--pad)}
+.pfi{padding-top:clamp(36px,6svh,64px);padding-bottom:clamp(20px,3svh,30px)}.pfi .intro{margin:0}.band h2{margin:0 0 10px;font-size:min(5vw,9svh);line-height:1}
+.band .intro{max-width:640px;margin:0 0 clamp(28px,5svh,54px);font-size:clamp(16px,1.2vw,19px);line-height:1.55;color:var(--mtrame);font-weight:600}
+/* portfolio */
+.flt{position:sticky;top:0;z-index:20;display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px var(--pad);background:rgba(20,17,14,.94)}
+.flt button{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;height:42px;padding:0 20px;border-radius:999px;border:1px solid rgba(255,255,255,.6);background:transparent;color:#fff;cursor:pointer}
+.flt button[aria-pressed=true]{background:var(--pierre);border-color:var(--pierre);color:var(--ombre)}
+.flt .nb{margin-left:auto;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mtrame)}
+.mos{columns:2;column-gap:4px;padding:4px}
+.mos figure{position:relative;margin:0 0 4px;break-inside:avoid;cursor:zoom-in;overflow:hidden;background:#1d1915}
+.mos img{width:100%;height:auto;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.mos figure:hover img{transform:scale(1.03)}
+.mos figcaption{position:absolute;left:18px;right:18px;bottom:14px;font-size:15px;font-weight:600;text-shadow:var(--shd);opacity:0;transform:translateY(8px);transition:opacity .4s,transform .4s}
+.mos figure:hover figcaption{opacity:1;transform:none}
+.mos figcaption small{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--pierre)}
+.mos figure.hide{display:none}
+#lb{position:fixed;inset:0;z-index:70;background:#0e0c0a;display:none}
+#lb.on{display:block}#lb img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+#lb .bar{position:absolute;z-index:2;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px var(--pad);background:rgba(14,12,10,.9)}
+#lb .cp{font-size:14px;font-weight:600}#lb .cp small{color:var(--pierre);letter-spacing:.2em;text-transform:uppercase;font-size:10px;margin-right:10px}
+#lb .bt{display:flex;gap:8px}#lb button{width:50px;height:50px;border-radius:999px;border:1px solid rgba(255,255,255,.7);background:transparent;color:#fff;display:grid;place-items:center;cursor:pointer}
+#lb button:hover{background:#fff;color:var(--ombre)}#lb button svg{width:20px;height:20px}
+#haut{position:fixed;z-index:45;right:clamp(16px,2.4vw,34px);bottom:clamp(14px,2.4svh,26px);width:60px;height:60px;border-radius:999px;border:1px solid rgba(200,182,142,.7);
+background:rgba(46,42,37,.94);color:var(--pierre);display:grid;place-items:center;cursor:pointer;box-shadow:0 18px 40px -14px rgba(0,0,0,.7);opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity .4s,transform .4s,background .3s,color .3s}
+#haut.on{opacity:1;transform:none;pointer-events:auto}#haut:hover{background:var(--pierre);color:var(--ombre)}#haut svg{width:22px;height:22px}
+/* méthode */
+.etapes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(22px,3.4vw,56px) clamp(18px,3vw,48px);max-width:1300px}
+.etapes .step p{color:var(--mtrame)}.etapes .step .n{font-family:Italiana,Georgia,serif;font-size:20px;color:var(--pierre);margin-left:10px}
+.pleine{position:relative;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);height:100svh;min-height:520px;overflow:hidden;background:var(--ombre)}.pleine .legende{display:none}
+.pleine>img{position:relative;width:100%;height:100%;object-fit:cover}
+.pleine .t{position:relative;align-self:center;padding:0 clamp(24px,4vw,64px) 60px;text-shadow:none}
+.pleine h2{margin:0;font-size:min(3.8vw,9svh);line-height:1}
+.pleine .lead{margin:16px 0 24px;max-width:460px;font-size:17px;line-height:1.5;font-weight:600}
+.faq{max-width:900px}.faq details{border-top:1px solid rgba(255,255,255,.25);padding:18px 0}.faq details:last-child{border-bottom:1px solid rgba(255,255,255,.25)}
+.faq summary{cursor:pointer;font-family:Italiana,Georgia,serif;font-size:clamp(22px,2vw,30px);list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:"+";font-family:Manrope,Arial,sans-serif;color:var(--pierre)}.faq details[open] summary::after{content:"–"}
+.faq p{margin:12px 0 0;color:var(--mtrame);font-size:16px;line-height:1.6;max-width:720px}
+/* tarifs */
+.dev{display:flex;gap:8px;margin:0 0 26px}
+.dev button{font-size:12px;font-weight:600;letter-spacing:.14em;height:42px;min-width:64px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.6);background:transparent;color:#fff;cursor:pointer}
+.dev button[aria-pressed=true]{background:var(--pierre);border-color:var(--pierre);color:var(--ombre)}
+.grille{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;max-width:1300px}
+.case{background:#14110e;padding:clamp(18px,2vw,28px);display:flex;flex-direction:column;gap:8px;min-height:250px}
+.case .tl{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--pierre)}
+.case .px{font-family:Italiana,Georgia,serif;font-size:clamp(40px,4vw,64px);line-height:1}.case .px small{font-family:Manrope,Arial,sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mtrame);display:block;margin-bottom:4px}
+.case p{margin:auto 0 0;color:var(--mtrame);font-size:15px;line-height:1.5}
+.ligne{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;max-width:1300px;margin-top:4px}
+.ligne div{background:#14110e;padding:22px clamp(18px,2vw,28px)}.ligne b{font-family:Italiana,Georgia,serif;font-weight:400;font-size:36px;color:var(--pierre);display:block}.ligne span{color:var(--mtrame);font-size:15px}
+.note{max-width:900px;margin:22px 0 0;color:var(--mtrame);font-size:14px;line-height:1.6}
+.sous{font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--pierre);margin:clamp(34px,5svh,56px) 0 14px}
+@media (max-width:760px){
+ nav ul li.m{display:none}
+ .top{height:auto;min-height:0}.top>img{position:static;height:auto}
+ .top .t{top:auto;bottom:16px}.top h1{font-size:12vw}.top .lead{display:none}.top .legende{display:none}
+ .top.txt-sous .t{position:static;padding:22px var(--pad) 8px;text-shadow:none}.top.txt-sous .lead{display:block;font-size:15px;color:var(--mtrame)}
+ .mos{columns:1}.mos figcaption{opacity:1;transform:none;font-size:13px;left:12px;bottom:10px}
+ .flt .nb{display:none}.flt button{height:38px;padding:0 14px;font-size:11px}
+ .band h2{font-size:10vw}.etapes{grid-template-columns:1fr}
+ .pleine{display:block;height:auto;min-height:0}.pleine>img{position:static;height:auto}.pleine .t{position:static;padding:22px var(--pad) 26px;text-shadow:none}.pleine h2{font-size:10vw}
+ .grille{grid-template-columns:1fr 1fr}.case{min-height:0}.case .px{font-size:34px}.ligne{grid-template-columns:1fr}
+ #lb .bar{flex-wrap:wrap}
+ #haut{right:12px;bottom:96px;width:50px;height:50px}
+ footer{padding-bottom:100px}}
+</style></head><body><header class="top"><img src="img/r042.jpg" alt="Rooftop restaurant" style="object-position:50% 50%"><nav><a href="index.html" aria-label="3DÉIZON"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 -62.4 2117.0 462.4" class="logo" role="img" aria-label="3DÉIZON"><g transform="translate(0,0)"><rect x="12" y="0" width="208" height="14" fill="currentColor"/><polygon points="199.0,13 220,13 113.0,177 92,177" fill="currentColor"/><rect x="92" y="176" width="30" height="14" fill="currentColor"/><path d="M122,176 A112,112 0 0 1 122,400 L122,386 A54,98 0 0 0 122,190 Z" fill="currentColor"/><path d="M122,400 L122,386 C72,386 30,378 4,348 L0,360 C30,398 72,400 122,400 Z" fill="currentColor"/></g><g transform="translate(298,0)"><rect x="0" y="0" width="58" height="400" fill="currentColor"/><rect x="0" y="0" width="120" height="14" fill="currentColor"/><rect x="0" y="386" width="120" height="14" fill="currentColor"/><path d="M120,0 A180,200 0 0 1 120,400 L120,386 A116,186 0 0 0 120,14 Z" fill="currentColor"/></g><g transform="translate(662,0)"><rect x="0" y="0" width="58" height="400" fill="currentColor"/><rect x="0" y="0" width="230" height="14" fill="currentColor"/><rect x="0" y="193.0" width="200" height="14" fill="currentColor"/><rect x="0" y="386" width="236" height="14" fill="currentColor"/><rect x="0" y="-62.400000000000006" width="230" height="22.400000000000002" fill="currentColor"/></g><g transform="translate(962,0)"><rect x="0" y="0" width="58" height="400" fill="currentColor"/></g><g transform="translate(1084,0)"><rect x="10" y="0" width="250" height="14" fill="currentColor"/><rect x="0" y="386" width="263" height="14" fill="currentColor"/><polygon points="181.7,13 260,13 78.30000000000001,387 0,387" fill="currentColor"/><rect x="10" y="188.8" width="250" height="22.400000000000002" fill="currentColor"/></g><g transform="translate(1411,0)"><path fill-rule="evenodd" d="M0,200 A171,205 0 1 1 342,200 A171,205 0 1 1 0,200 Z M62,200 A109,191 0 1 0 280,200 A109,191 0 1 0 62,200 Z" fill="currentColor"/><ellipse cx="171" cy="200" rx="24" ry="34" fill="currentColor"/></g><g transform="translate(1817,0)"><rect x="0" y="0" width="14" height="400" fill="currentColor"/><rect x="286" y="0" width="14" height="400" fill="currentColor"/><polygon points="0,0 66.69999999999999,0 300,400 233.3,400" fill="currentColor"/></g></svg>
+</a><ul><li class="m"><a href="portfolio.html">Portfolio</a></li><li class="m"><a href="process.html">Process</a></li><li class="m"><a href="pricing.html">Pricing</a></li><li class="lng"><a href="fr/partenaires.html" onclick="try{localStorage.setItem('3dz-lang','fr')}catch(e){}">FR</a></li></ul></nav><div class="t"><h1 class="it">Partners.</h1></div><span class="legende">Rooftop restaurant</span></header><section class="band"><h2 class="it reveal">White label, partner rates.</h2><p class="intro reveal">For agencies that sell real estate projects. We produce the images, you deliver them under your name: 3DÉIZON never appears, and an NDA is signed before any plan is shared. Partner rates are 15% below our list prices, excluding VAT.</p><div class="dev"><button type="button" data-c="usd" aria-pressed="true">$ USD</button><button type="button" data-c="eur" aria-pressed="false">€ EUR</button></div><p class="sous">Interior views</p><div class="grille"><div class="case reveal"><span class="tl">S</span><span class="px"><span data-eur="385 €" data-usd="$440">$440</span></span><p>A bedroom, a bathroom, a single angle.</p></div><div class="case reveal"><span class="tl">M</span><span class="px"><span data-eur="555 €" data-usd="$640">$640</span></span><p>A living room, a kitchen, a lobby.</p></div><div class="case reveal"><span class="tl">L</span><span class="px"><span data-eur="810 €" data-usd="$935">$935</span></span><p>Large or highly detailed spaces: restaurant, open plan.</p></div><div class="case reveal"><span class="tl">XL</span><span class="px"><small>from</small><span data-eur="1,190 €" data-usd="$1,360">$1,360</span></span><p>Exceptional scenes, quoted case by case.</p></div></div><p class="sous">Exterior views</p><div class="grille"><div class="case reveal"><span class="tl">S</span><span class="px"><span data-eur="555 €" data-usd="$640">$640</span></span><p>A close view of one façade.</p></div><div class="case reveal"><span class="tl">M</span><span class="px"><span data-eur="810 €" data-usd="$935">$935</span></span><p>A façade with its street or garden.</p></div><div class="case reveal"><span class="tl">L</span><span class="px"><span data-eur="1,105 €" data-usd="$1,275">$1,275</span></span><p>A whole building and its surroundings.</p></div><div class="case reveal"><span class="tl">XL</span><span class="px"><small>from</small><span data-eur="1,615 €" data-usd="$1,870">$1,870</span></span><p>Aerial views and masterplans, quoted case by case.</p></div></div><p class="sous">What you get</p><div class="ligne"><div class="reveal"><b>NDA</b><span>signed before any plan</span></div><div class="reveal"><b>0</b><span>mention of 3DÉIZON</span></div><div class="reveal"><b>24 h</b><span>fixed quote on any plan</span></div></div><p class="note">Client volume discounts do not stack with partner rates. Payment: deposit by card at order, balance on approval of the finals. 4K files are delivered after the balance.</p></section><section class="pleine"><img src="img/r023.jpg" alt="Lounge"><div class="t"><h2 class="it">Send one plan.</h2><p class="lead">From a live project. You get a fixed price and a delivery date within 24 hours. No call needed.</p><a class="btn p" href="mailto:contact@3deizon.com?subject=Partner%20quote">Send a plan<svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></div><span class="legende">Lounge</span></section><footer><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 -62.4 2117.0 462.4" class="logo" role="img" aria-label="3DÉIZON"><g transform="translate(0,0)"><rect x="12" y="0" width="208" height="14" fill="currentColor"/><polygon points="199.0,13 220,13 113.0,177 92,177" fill="currentColor"/><rect x="92" y="176" width="30" height="14" fill="currentColor"/><path d="M122,176 A112,112 0 0 1 122,400 L122,386 A54,98 0 0 0 122,190 Z" fill="currentColor"/><path d="M122,400 L122,386 C72,386 30,378 4,348 L0,360 C30,398 72,400 122,400 Z" fill="currentColor"/></g><g transform="translate(298,0)"><rect x="0" y="0" width="58" height="400" fill="currentColor"/><rect x="0" y="0" width="120" height="14" fill="currentColor"/><rect x="0" y="386" width="120" height="14" fill="currentColor"/><path d="M120,0 A180,200 0 0 1 120,400 L120,386 A116,186 0 0 0 120,14 Z" fill="currentColor"/></g><g transform="translate(662,0)"><rect x="0" y="0" width="58" height="400" fill="currentColor"/><rect x="0" y="0" width="230" height="14" fill="currentColor"/><rect x="0" y="193.0" width="200" height="14" fill="currentColor"/><rect x="0" y="386" width="236" height="14" fill="currentColor"/><rect x="0" y="-62.400000000000006" width="230" height="22.400000000000002" fill="currentColor"/></g><g transform="translate(962,0)"><rect x="0" y="0" width="58" height="400" fill="currentColor"/></g><g transform="translate(1084,0)"><rect x="10" y="0" width="250" height="14" fill="currentColor"/><rect x="0" y="386" width="263" height="14" fill="currentColor"/><polygon points="181.7,13 260,13 78.30000000000001,387 0,387" fill="currentColor"/><rect x="10" y="188.8" width="250" height="22.400000000000002" fill="currentColor"/></g><g transform="translate(1411,0)"><path fill-rule="evenodd" d="M0,200 A171,205 0 1 1 342,200 A171,205 0 1 1 0,200 Z M62,200 A109,191 0 1 0 280,200 A109,191 0 1 0 62,200 Z" fill="currentColor"/><ellipse cx="171" cy="200" rx="24" ry="34" fill="currentColor"/></g><g transform="translate(1817,0)"><rect x="0" y="0" width="14" height="400" fill="currentColor"/><rect x="286" y="0" width="14" height="400" fill="currentColor"/><polygon points="0,0 66.69999999999999,0 300,400 233.3,400" fill="currentColor"/></g></svg>
+</span><span class="fl"><a href="portfolio.html">Portfolio</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="https://projet.3deizon.com/privacy.html">Privacy</a><a href="https://projet.3deizon.com/terms.html">Terms</a></span><span>Marostone FZ-LLC · Compass Building, Ras Al Khaimah, UAE · contact@3deizon.com</span></footer><div id="cta"><a class="btn p" href="mailto:contact@3deizon.com?subject=Partner%20quote">Send a plan<svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a><a class="btn wa" href="https://wa.me/971586331996" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></a></div><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>(function(){if(!window.gsap||matchMedia('(prefers-reduced-motion: reduce)').matches)return;gsap.registerPlugin(ScrollTrigger);
+if(window.Lenis){var l=new Lenis({lerp:.1});window.__lenis=l;l.on('scroll',ScrollTrigger.update);gsap.ticker.add(function(t){l.raf(t*1000)});gsap.ticker.lagSmoothing(0);}
+gsap.from('.top>img',{scale:1.12,duration:2.2,ease:'power3.out'});gsap.from(['nav','.top .t>*'],{y:40,opacity:0,duration:1.1,ease:'power3.out',stagger:.08,delay:.15});
+gsap.utils.toArray('.reveal').forEach(function(e){gsap.from(e,{y:50,opacity:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:e,start:'top 85%'}})});
+gsap.utils.toArray('.pleine>img').forEach(function(e){gsap.fromTo(e,{scale:1.12},{scale:1,ease:'none',scrollTrigger:{trigger:e.parentNode,start:'top bottom',end:'bottom top',scrub:true}})});})();</script><script>(function(){var B=[].slice.call(document.querySelectorAll('.dev button'));B.forEach(function(b){b.onclick=function(){B.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+var c=b.dataset.c;document.querySelectorAll('[data-eur]').forEach(function(s){s.textContent=s.dataset[c]});try{localStorage.setItem('3dz-cur',c)}catch(e){}}});
+try{var c=localStorage.getItem('3dz-cur');if(c){var x=document.querySelector('.dev [data-c='+c+']');x&&x.click()}}catch(e){}})();</script></body></html>
